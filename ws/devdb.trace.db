@@ -1321,3 +1321,6 @@ Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Ayten/R
 	at org.h2.mvstore.FileStore.open(FileStore.java:128)
 	at org.h2.mvstore.MVStore.<init>(MVStore.java:452)
 	... 60 more
+2022-08-11 23:24:12 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "delete from USERS where id = 28[*]USERS"; SQL statement:
+delete from USERS where id = 28USERS [42000-214]
