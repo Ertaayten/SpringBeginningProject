@@ -1,21 +1,28 @@
 
-spring:
-  datasource:
-    url: jdbc:h2:./devdb
-    username: sa
-  jpa:
-    hibernate:
-      ddl-auto: update
-
-
-
-  
-    properties:
-      persistence:
-        validation:
-          mode:none  
-            
-            
+#spring:
 #  datasource:
-#    generate-unique-name: false
+#    url: jdbc:h2:./devdb
+#    username: sa
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+
+
+spring:
+  jpa:
+    properties:
+      javax:
+        persistence:
+          validation:
+            mode: none
+            
+            
+  datasource:
+    generate-unique-name: false
+    
+
+   
+server:
+  error:
+    path: "/error"
     
